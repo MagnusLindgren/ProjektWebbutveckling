@@ -14,7 +14,6 @@ body {
 header {
     background-color: gray;
     text-align: center;
-    padding: 5px;
 }
 
 a:link {
@@ -29,6 +28,7 @@ a:link {
     overflow: hidden;
 }
 
+/* #region Navbar */
 #navbar {
     background-color: #333;
     color: #fff;
@@ -49,3 +49,27 @@ a:link {
     font-size: 18px;
     padding-right: 15px;
 }
+/* #endregion */
+/* #region Showcase */
+#showcase {
+    background-image: url(../img/computer_engineering_science_tech_3500x2454.jpg); /* Inte den bästa bilden */
+    background-position: center;
+    min-height: 300px;
+    margin-bottom: 2px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#showcase h1 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#showcase p {
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+/* #endregion */
