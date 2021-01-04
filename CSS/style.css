@@ -11,7 +11,41 @@ body {
     line-height: 1.6em;
 }
 
+header {
+    background-color: gray;
+    text-align: center;
+    padding: 5px;
+}
+
 a:link {
     color: #fff;
     text-decoration: none;
+}
+
+/* Main cointainer to use all troughout the site*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+#navber ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
 }
