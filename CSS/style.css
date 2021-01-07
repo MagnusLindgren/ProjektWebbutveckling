@@ -100,3 +100,78 @@ footer p{
     text-shadow: 2px 2px black;
     font-size: 12px;
 }
+
+/* css för produktsida */
+.slidershow{
+width: 700px;
+height: 400px;
+overflow: hidden;
+}
+
+.middle{
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.navigation{
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgba(36, 155, 52, 0.651);
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+background: #50fa3a;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+width: 500%;
+height: 100%;
+display: flex;
+}
+
+.slide img{
+width: 100%;
+height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0%;
+}
+
+#r2:checked ~ .s1{
+margin-left: -20%;
+}
+
+#r3:checked ~ .s1{
+    margin-left: -40%;
+    }
+
+#webbsidaBild{
+max-width: 100%;
+}
+
+#databankBild{
+    max-width: 100%;
+    }
+    
+#appGif{
+     max-width: 100%;
+    }
