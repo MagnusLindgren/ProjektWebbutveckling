@@ -98,3 +98,24 @@ footer p{
     text-shadow: 2px 2px black;
     font-size: 12px;
 }
+
+/* css för produktsida */
+.slidershow{
+width: 700px;
+height: 400px;
+overflow: hidden;
+}
+
+.middle{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.slides{
+width: 500%;
+height: 100%;
+display: flex;
+}
+
