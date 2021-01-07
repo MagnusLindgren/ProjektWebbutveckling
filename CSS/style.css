@@ -12,8 +12,27 @@ body {
 }
 
 header {
-    background-color: gray;
+    background-image: url(../img/computer_engineering_science_tech_3500x2454.jpg); /* Inte den bästa bilden */
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin-bottom: 2px;
     text-align: center;
+    background-attachment: fixed;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+header p {
+    color: #fff;
+    text-shadow: 2px 2px black;
 }
 
 a:link {
@@ -50,31 +69,14 @@ a:link {
     padding-right: 15px;
 }
 /* #endregion */
-/* #region Showcase */
-#showcase {
-    background-image: url(../img/computer_engineering_science_tech_3500x2454.jpg); /* Inte den bästa bilden */
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 300px;
-    margin-bottom: 2px;
-    text-align: center;
-    background-attachment: fixed;
+
+.slideshow {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    max-height: 30em;
 }
 
-#showcase h1 {
-    color: #fff;
-    font-size: 50px;
-    text-shadow: 2px 2px black;
-    line-height: 1.6em;
-    padding-top: 30px;
-}
-
-#showcase p {
-    color: #fff;
-    text-shadow: 2px 2px black;
-}
-/* #endregion */
 .content{
     min-height: 100%;
     height: auto !important;
