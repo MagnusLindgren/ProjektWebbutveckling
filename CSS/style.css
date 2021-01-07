@@ -108,7 +108,7 @@ overflow: hidden;
 
 .middle{
 position: absolute;
-top: 50%;
+top: 70%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
@@ -124,14 +124,14 @@ display: flex;
 .bar{
     width: 50px;
     height: 10px;
-    border: 2px solid rgba(36, 155, 52, 0.808);
+    border: 2px solid rgba(36, 155, 52, 0.651);
     margin: 6px;
     cursor: pointer;
     transition: 0.4s;
 }
 
 .bar:hover{
-background: #fff;
+background: #50fa3a;
 }
 
 input[name="r"]{
