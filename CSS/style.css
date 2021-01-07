@@ -161,3 +161,15 @@ margin-left: -20%;
 #r3:checked ~ .s1{
     margin-left: -40%;
     }
+
+#webbsidaBild{
+max-width: 100%;
+}
+
+#databankBild{
+    max-width: 100%;
+    }
+    
+#appGif{
+     max-width: 100%;
+    }
