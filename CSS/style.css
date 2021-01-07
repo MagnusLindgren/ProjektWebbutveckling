@@ -54,6 +54,8 @@ a:link {
 #showcase {
     background-image: url(../img/computer_engineering_science_tech_3500x2454.jpg); /* Inte den bästa bilden */
     background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     min-height: 300px;
     margin-bottom: 2px;
     text-align: center;
