@@ -11,23 +11,24 @@ body {
     line-height: 1.6em;
 }
 
-header {
-    background-image: url(../img/computer_engineering_science_tech_3500x2454.jpg); /* Inte den bästa bilden */
+/* Header */
+#headerback {
+    background-image: url(../img/headerback.jpg); 
     background-position: top;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;
     margin-bottom: 2px;
     text-align: center;
     background-attachment: fixed;
+    position: relative;
 }
 
 header h1 {
     color: #fff;
-    font-size: 30px;
+    font-size: 45px;
     text-shadow: 2px 2px black;
     line-height: 1.6em;
-    padding-top: 30px;
 }
 
 header p {
@@ -35,10 +36,19 @@ header p {
     text-shadow: 2px 2px black;
 }
 
+.textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Länk */
 a:link {
     color: #fff;
     text-decoration: none;
 }
+
 
 /* Main cointainer to use all troughout the site*/
 .container {
@@ -51,6 +61,7 @@ a:link {
 #navbar {
     background-color: #333;
     color: #fff;
+    overflow: hidden;
 }
 
 #navber ul {
@@ -65,9 +76,25 @@ a:link {
 #navbar a {
     color: #fff;
     text-decoration: none;
+    text-align: center;
     font-size: 18px;
-    padding-right: 15px;
+    padding: 14px 16px;
 }
+
+#navbar a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.active {
+    background-color: rgb(102, 101, 101);
+    color: white;
+}
+
+#navbar .icon {
+    display: none;
+}
+
 /* #endregion */
 
 .slideshow {
