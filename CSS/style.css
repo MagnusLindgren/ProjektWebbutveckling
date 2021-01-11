@@ -58,7 +58,10 @@ a:link {
 }
 
 /* #region Navbar */
-#navbar {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #333;
     color: #fff;
     overflow: hidden;
@@ -66,24 +69,27 @@ a:link {
     margin-bottom: 1rem;
 }
 
-#navbar ul {
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     list-style: none;
 }
 
-#navbar li {
+.navbar li {
     display: inline;
 }
 
-#navbar a {
+.navbar a {
     color: #fff;
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    padding: 14px 16px;
+    padding: 10px 16px;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     background-color: #fff;
     color: #333;
 }
@@ -93,6 +99,17 @@ a:link {
     color: white;
 }
 
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
 
 /* #endregion */
 
