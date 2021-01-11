@@ -104,6 +104,15 @@ a:link {
 }
 
 /* css för kontaktsida och footer */
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gray;
+  }
 .contactslides{
     border-radius: 25px;
     width: 30%;
