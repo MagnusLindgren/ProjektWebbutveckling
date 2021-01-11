@@ -56,6 +56,11 @@ a:link {
     margin: auto;
     overflow: hidden;
 }
+/* Så att flytande objekt inte krockar eller blir buggiga.*/
+.clr {
+    clear:both;
+}
+
 
 /* #region Navbar */
 nav {
