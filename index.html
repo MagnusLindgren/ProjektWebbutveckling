@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <title>Webscout</title>
+        <title>Webscout Webbutveckling</title>
         <meta charset="UTF-8">   
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="descritpion" content="Webscout webbutveckling hjälper dig att skapa din egen plats på internet.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Webbutvekling">
+
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
         <!-- Custom CSS -->
         <link rel="stylesheet" href="CSS\style.css"/>
-                
+         <!-- Font awesome -->     
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     </head>
-    <body>
-        
+    <body>        
         <header>
-              <div class="container" title="">
-                  <h1>Webscout<br>
-                      Web Developer
-                  </h1>   
+          <div id="headerback">
+              <div class="textbox">
+                  <h1>Webscout</h1>  
                   <p>Vi designar och skapar din plats på nätet!</p>             
               </div>
+          </div>
+
+          <nav> 
+              <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+              </button>
+              <ul class="navbar" id="myNav">       
+                  <li><a href="#" class="active">Nyheter</a></li>
+                  <li><a href="Produktsida.html">Tjänster</a></li>
+                  <li><a href="contact.html">Kontakt</a></li>                            
+              </ul>
+          </nav>
         </header>
 
-        <nav id="navbar">
-            <div class="container">
-                <li><a href="#">Nyheter</a></li>
-                <li><a href="#">Tjänster</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </div>
-        </nav>
-
-        <section class="container">
-        <div class="slideshow">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../img/1236519.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../img/computer_engineering_science_tech_3500x2454.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../img/1236519.jpg" class="d-block w-100" alt="...">
+        <section class="slideshow">
+          <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/1236519.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/computer_engineering_science_tech_3500x2454.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/1236519.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div></div></section>
+        </section>
 
-        <footer><p> Vi som äger denna sida är Magnus Lindgren, Svante Pålsson och Sandra Gerholds. Våra kontaktuppgifter
-            hittar du under Kontakt 
-        </p></footer>
+        <footer id="footer">
+          <h6>Extra info:</h6>
+          <p>©2020 WEBSCOUT. Emma, Clark, Monique. Det är vi som äger och utvecklar denna sida. Våra kontaktuppgifter
+          hittar du under fliken kontakt</p>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
