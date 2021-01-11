@@ -114,19 +114,54 @@ nav {
 /* #endregion */
 
 .slideshow {
+   
     width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
 /* css för kontaktsida och footer */
+
+
 .contactslides{
+    border-radius: 4px;
     width: 30%;
-    height: 750px;
+    height:  auto;
     margin: auto;
     overflow: hidden;
     max-height: 30em;
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px black;
+    font-size: 14px;
+    
 
+}
+ .contact{
+    
+        margin: auto;
+        width: 30%;
+        align-items: center; 
+ }
+
+ .contact input[type=text], .contact select, .contact textarea {
+    width: 100%; 
+    padding: 6px; 
+    border: 2px solid rgb(102, 101, 101);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    resize: vertical 
+}
+
+.contact input[type=submit]:hover {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: slategray
+    
+    
 }
 
 .content{
@@ -141,16 +176,28 @@ nav {
 }
 
 footer {
-    background-color: gray;
-    text-align: center;
-}
+    border-top: 1px solid rgb(102, 101, 101);
+    background-color: #333;
+    color: #fff
+    
+   }
+
 
 footer p{
     width: 80%;
     margin: 10px auto;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 2px 2px black;
+    font-size: 14px;
+}
+
+footer h6{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
+
 }
 
 /* css för produktsida */
