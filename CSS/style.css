@@ -62,6 +62,8 @@ a:link {
     background-color: #333;
     color: #fff;
     overflow: hidden;
+    border-bottom: 1px solid rgb(102, 101, 101);
+    margin-bottom: 1rem;
 }
 
 #navbar ul {
@@ -91,9 +93,6 @@ a:link {
     color: white;
 }
 
-#navbar .icon {
-    display: none;
-}
 
 /* #endregion */
 
@@ -102,7 +101,6 @@ a:link {
     width: 100%;
     margin: auto;
     overflow: hidden;
-    max-height: 30em;
 }
 
 /* css för kontaktsida och footer */
