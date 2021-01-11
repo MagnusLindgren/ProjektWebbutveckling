@@ -103,6 +103,15 @@ a:link {
 }
 
 /* css för kontaktsida och footer */
+.contactslides{
+    width: 30%;
+    height: 750px;
+    margin: auto;
+    overflow: hidden;
+    max-height: 30em;
+
+}
+
 .content{
     min-height: 100%;
     height: auto !important;
