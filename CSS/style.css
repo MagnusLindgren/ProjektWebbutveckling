@@ -98,6 +98,7 @@ a:link {
 /* #endregion */
 
 .slideshow {
+   
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -106,8 +107,9 @@ a:link {
 
 /* css för kontaktsida och footer */
 .contactslides{
+    border-radius: 25px;
     width: 30%;
-    height: 750px;
+    height:  auto;
     margin: auto;
     overflow: hidden;
     max-height: 30em;
@@ -135,7 +137,16 @@ footer p{
     margin: 10px auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px black;
+    font-size: 14px;
+}
+
+footer h6{
+    width: 80%;
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px black;
     font-size: 12px;
+
 }
 
 /* css för produktsida */
