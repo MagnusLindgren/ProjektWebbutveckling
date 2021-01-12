@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <title>Webscout</title>
+        <title>Webscout Webbutveckling</title>
         <meta charset="UTF-8">   
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="descritpion" content="Webscout webbutveckling hjälper dig att skapa din egen plats på internet.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Webbutvekling">
+
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
         <!-- Custom CSS -->
         <link rel="stylesheet" href="CSS\style.css"/>
-                
+         <!-- Font awesome -->     
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     </head>
     <body>        
         <header>
           <div id="headerback">
               <div class="textbox">
-                  <h1>Webscout</h1>  
-                  <p>Kontakt</p>             
+                  <img src="../img/Logo.png" alt="logo">
+                   <br>
+                  <p>Vi designar och skapar din plats på nätet!</p>             
               </div>
-            </div>
-        </header>
+          </div>
 
-        <nav id="navbar">
-            <div class="container">
-                <li><a href="index.html">Nyheter</a></li>
-                <li><a href="Produktsida.html">Tjänster</a></li>
-                <li><a href="#" class="active">Kontakt</a></li>
-            </div>
-        </nav>
+          <nav> 
+              <a href="index.html" alt="Start"><img src="../img/Logo.png" alt="Webscout" class="logo"></a>
+              <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+              </button>
+              <ul class="navbar" id="myNavbar">       
+                  <li><a href="Produktsida.html">Våra tjänster</a></li>
+                  <li><a href="contact.html">Kontakta oss</a></li>                           
+              </ul>
+          </nav>
+        </header>
 
         <br>
         <br>
@@ -44,7 +51,7 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="imgProjekt.html/WebscoutEmma.jpg" class="d-block w-100" alt="...">
+                    <img src="img/WebscoutEmma.jpg" class="d-block w-100" alt="...">
                     <h5><strong>Webscout Emma</strong></h5>
                       <p>
                         Emma är en driven <em>webbutvecklare</em> och <em>entreprenör</em>. <br>
@@ -55,23 +62,21 @@
                       <br>
                   </div>
                   <div class="carousel-item">
-                    <img src="imgProjekt.html/WebscoutClark (2).jpg" class="d-block w-100" alt="...">
+                    <img src="img/WebscoutClark (2).jpg" class="d-block w-100" alt="...">
                     <h5><strong>Webscout Clark</strong></h5>
-                      <p>
+                      <p><br>
                         Clark gillar ordning och reda. <br>
                         Det ska vara snyggt och snällt för öga när man browsar, säger Clark. <br>
                         Clark är en fena på <em>UX-design</em>.  
-                      </p>
-                      <br>
+                      </p><br>
                   </div>
                   <div class="carousel-item">
-                    <img src="imgProjekt.html/WebscoutMonique.jpg" class="d-block w-100" alt="...">
+                    <img src="img/WebscoutMonique.jpg" class="d-block w-100" alt="...">
                     <h5><strong>Webscout Monique</strong></h5>
                     <p>
                       Monique är din servers brandman. <br>
                       Den okrönta drottningen av <em>backend</em>. 
-                    </p>
-                    <br>
+                    </p><br>
                   </div>
                   
                 </div>
@@ -130,5 +135,6 @@
           <p> ©2020 WEBSCOUT. Emma, Clark, Monique. Det är vi som äger och utvecklar denna sida. Våra kontaktuppgifter
             hittar du under fliken kontakt</p>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

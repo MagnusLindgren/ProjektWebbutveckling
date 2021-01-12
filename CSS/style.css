@@ -11,7 +11,8 @@ body {
     line-height: 1.6em;
 }
 
-/* Header */
+/* #region Header */
+
 #headerback {
     background-image: url(../img/headerback.jpg); 
     background-position: top;
@@ -42,6 +43,7 @@ header p {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* #endregion */
 
 /* Länk */
 a:link {
@@ -49,6 +51,10 @@ a:link {
     text-decoration: none;
 }
 
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
 
 /* Main cointainer to use all troughout the site*/
 .container {
@@ -56,34 +62,45 @@ a:link {
     margin: auto;
     overflow: hidden;
 }
+/* Så att flytande objekt inte krockar eller blir buggiga.*/
+.clr {
+    clear:both;
+}
+
 
 /* #region Navbar */
-#navbar {
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /** För att jag skulle slänga in en logo till vänster och då trycka menyn till höger **/
     background-color: #333;
     color: #fff;
     overflow: hidden;
-    border-bottom: 1px solid rgb(102, 101, 101);
     margin-bottom: 1rem;
 }
 
-#navbar ul {
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     list-style: none;
 }
 
-#navbar li {
+.navbar li {
     display: inline;
 }
 
-#navbar a {
+.navbar a {
     color: #fff;
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    padding: 14px 16px;
+    padding: 10px 12px;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     background-color: #fff;
     color: #333;
 }
@@ -93,6 +110,23 @@ a:link {
     color: white;
 }
 
+.logo {
+    max-width: 120px;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    margin: 0px 5px;
+}
+
+.hamburger:focus {
+    outline: none;
+}
 
 /* #endregion */
 
@@ -104,12 +138,14 @@ a:link {
 }
 
 /* css för kontaktsida och footer */
-
+.carousel-inner {
+    height: 450px;
+}
 
 .contactslides{
     border-radius: 4px;
     width: 30%;
-    height:  auto;
+    height: auto;
     margin: auto;
     overflow: hidden;
     max-height: 30em;
@@ -117,8 +153,6 @@ a:link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px black;
     font-size: 14px;
-    
-
 }
  .contact{
     
@@ -191,7 +225,7 @@ overflow: hidden;
 }
 
 .middle{
-position: absolute;
+position: relative;
 top: 70%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -247,7 +281,8 @@ margin-left: -20%;
     }
 
 #webbsidaBild{
-max-width: 100%;
+max-width: 30%;
+max-height: 50%;
 }
 
 #databankBild{
@@ -255,5 +290,55 @@ max-width: 100%;
     }
     
 #appGif{
-     max-width: 100%;
+     max-width: 30%;
+     max-height: 50%;
     }
+
+/* Bilder på produktsida */
+.fRight{
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.fLeft{
+    float: left;
+    margin: 0  5px  5px 0;
+}
+
+.imgFlip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/** Responsivitet **/
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        display: none;
+        
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .contact {   
+        margin: auto;
+        width: 100%;
+        align-items: center; 
+    }
+
+    .contactslides{
+    width: 100%;
+    }
+}

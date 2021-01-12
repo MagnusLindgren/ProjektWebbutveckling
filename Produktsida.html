@@ -1,67 +1,71 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <title>Webscout</title>
+        <title>Webscout Webbutveckling</title>
         <meta charset="UTF-8">   
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="descritpion" content="Webscout webbutveckling hjälper dig att skapa din egen plats på internet.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Webbutvekling">
+
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
         <!-- Custom CSS -->
         <link rel="stylesheet" href="CSS\style.css"/>
-                
+         <!-- Font awesome -->     
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     </head>
     <body>        
         <header>
           <div id="headerback">
               <div class="textbox">
-                  <h1>Webscout</h1>  
-                  <p>Produkter</p>             
+                  <img src="../img/Logo.png" alt="logo">
+                   <br>
+                  <p>Vi designar och skapar din plats på nätet!</p>             
               </div>
-            </div>
+          </div>
+
+          <nav> 
+              <a href="index.html" alt="Start"><img src="../img/Logo.png" alt="Webscout" class="logo"></a>
+              <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+              </button>
+              <ul class="navbar" id="myNavbar">       
+                  <li><a href="Produktsida.html">Våra tjänster</a></li>
+                  <li><a href="contact.html">Kontakta oss</a></li>                           
+              </ul>
+          </nav>
         </header>
 
-        <nav id="navbar">
-            <div class="container">
-                <li><a href="index.html">Nyheter</a></li>
-                <li><a href="#" class="active">Tjänster</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </div>
-        </nav>
         
-        <!--Slideshow med bilder på tjänster/produkter-->
-    
-        <div class="slidershow middle">
-
-            <div class="slides">
-                <input type="radio" name="r" id="r1" checked>
-                <input type="radio" name="r" id="r2">
-                <input type="radio" name="r" id="r3">
-                <div class = "slide s1">
-                    <img src="../img/webbsida.png" alt="bild på webbsida" id="webbsidaBild">
-                </div>
-                <div class="slide">
-                    <img src="../img/databank.jpeg" alt="" id="databankBild">
-                </div>
-                <div class="slide">
-                    <img src="../img/app.gif" alt="" id="appGif">
-                </div>
-            </div>
-
-            <div class="navigation">
-                <label for="r1" class="bar"></label>
-                <label for="r2" class="bar"></label>
-                <label for="r3" class="bar"></label>
-            </div>
-        </div>
- 
-   
+        <section>
+        <article>
+            <h4><a href="WebbsidaProdukt.html">Webbplats</a></h4>
+            <img id="webbsidaBild" class = "fRight imgFlip" src="img/webbsida.png">
+            <p>Vi på webscouterna är experter på att utforma din webbplats, webbsida, hemsida.</p>
+            <div class="clr"></div>
+        </article>
+        <article>
+            <h4><a href="AppProdukt.html">App</a></h4>
+            <img id="appGif" class = "fLeft imgFlip" src="img/app.gif">
+            <p>Behöver ditt företag en app där dina kunder eller medarbetare kan logga in och se sina scheman eller handla era produkter?</p>
+            <p>På webscouterna är vi experter på appar, ta kontakt med oss idag för en kostnadsfri konsultation kring hur er app ska utformas</p>
+            <div class="clr"></div>
+        </article>
+        <article>
+            <h4><a href="CloudProdukt.html">Cloudservice</a></h4>
+            <img id="databankBild" class = "fRight imgFlip" src="img/databank.jpeg">
+            <p>Vi på webscouterna har lång erfarenhet utav att utveckla cloudtjänster för företag, vi bygger databanker som håller koll på era kunder och ordrar.</p>
+            <p>Har ni ett åkeri? Vi samlar in information ifrån era fordon så att ni kan optimera er ruter.</p>
+            <div class="clr"></div>
+        </article>
+        </section>
         
         <footer id="footer">
             <h6>Extra info:</h6>
             <p> ©2020 WEBSCOUT. Emma, Clark, Monique. Det är vi som äger och utvecklar denna sida. Våra kontaktuppgifter
             hittar du under fliken kontakt</p>
         </footer>
+        <script src="js/script.js"></script>
     </body>
  </html>
