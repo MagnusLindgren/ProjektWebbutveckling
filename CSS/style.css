@@ -11,7 +11,8 @@ body {
     line-height: 1.6em;
 }
 
-/* Header */
+/* #region Header */
+
 #headerback {
     background-image: url(../img/headerback.jpg); 
     background-position: top;
@@ -42,6 +43,7 @@ header p {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* #endregion */
 
 /* Länk */
 a:link {
@@ -60,12 +62,12 @@ a:link {
 /* #region Navbar */
 nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /** För att jag skulle slänga in en logo till vänster och då trycka menyn till höger **/
     background-color: #333;
     color: #fff;
     overflow: hidden;
-    border-bottom: 1px solid rgb(102, 101, 101);
     margin-bottom: 1rem;
 }
 
@@ -86,7 +88,7 @@ nav {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    padding: 10px 16px;
+    padding: 10px 12px;
 }
 
 .navbar a:hover {
@@ -99,12 +101,18 @@ nav {
     color: white;
 }
 
+.logo {
+    max-width: 120px;
+}
+
 .hamburger {
     background-color: transparent;
     border: 0;
     color: #fff;
     cursor: pointer;
     font-size: 20px;
+    display: none;
+    margin: 0px 5px;
 }
 
 .hamburger:focus {
@@ -274,3 +282,23 @@ max-width: 100%;
 #appGif{
      max-width: 100%;
     }
+
+
+/** Responsivitet **/
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        display: none;
+        
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
