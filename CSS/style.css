@@ -269,7 +269,8 @@ margin-left: -20%;
     }
 
 #webbsidaBild{
-max-width: 100%;
+max-width: 30%;
+max-height: 50%;
 }
 
 #databankBild{
@@ -277,5 +278,22 @@ max-width: 100%;
     }
     
 #appGif{
-     max-width: 100%;
+     max-width: 30%;
+     max-height: 50%;
     }
+
+/* Bilder på produktsida */
+.fRight{
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.fLeft{
+    float: left;
+    margin: 0  5px  5px 0;
+}
+
+.imgFlip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
