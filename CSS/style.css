@@ -290,7 +290,21 @@ max-height: 50%;
      max-height: 50%;
     }
 
-<<<<<<< HEAD
+/* Bilder på produktsida */
+.fRight{
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.fLeft{
+    float: left;
+    margin: 0  5px  5px 0;
+}
+
+.imgFlip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
 
 /** Responsivitet **/
 
@@ -309,20 +323,4 @@ max-height: 50%;
     .hamburger {
         display: block;
     }
-=======
-/* Bilder på produktsida */
-.fRight{
-    float: right;
-    margin: 0 0 5px 5px;
-}
-
-.fLeft{
-    float: left;
-    margin: 0  5px  5px 0;
-}
-
-.imgFlip{
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
->>>>>>> 1c5e54680055cb6c1a877bfb0ac3a01ee86756a4
 }
