@@ -58,6 +58,11 @@ a:link {
     margin: auto;
     overflow: hidden;
 }
+/* Så att flytande objekt inte krockar eller blir buggiga.*/
+.clr {
+    clear:both;
+}
+
 
 /* #region Navbar */
 nav {
@@ -216,7 +221,7 @@ overflow: hidden;
 }
 
 .middle{
-position: absolute;
+position: relative;
 top: 70%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -272,7 +277,8 @@ margin-left: -20%;
     }
 
 #webbsidaBild{
-max-width: 100%;
+max-width: 30%;
+max-height: 50%;
 }
 
 #databankBild{
@@ -280,9 +286,11 @@ max-width: 100%;
     }
     
 #appGif{
-     max-width: 100%;
+     max-width: 30%;
+     max-height: 50%;
     }
 
+<<<<<<< HEAD
 
 /** Responsivitet **/
 
@@ -301,4 +309,20 @@ max-width: 100%;
     .hamburger {
         display: block;
     }
+=======
+/* Bilder på produktsida */
+.fRight{
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.fLeft{
+    float: left;
+    margin: 0  5px  5px 0;
+}
+
+.imgFlip{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+>>>>>>> 1c5e54680055cb6c1a877bfb0ac3a01ee86756a4
 }
