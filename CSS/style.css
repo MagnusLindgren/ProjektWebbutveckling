@@ -311,7 +311,7 @@ max-height: 50%;
 }
 
 /* Knapp för att komma till kontakt ifrån produktsidorna */
-.button {
+.prodButton {
     background-color: #1472eec9;
     border-style: solid;
     color: rgb(31, 44, 231);
