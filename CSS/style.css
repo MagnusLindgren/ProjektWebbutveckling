@@ -51,6 +51,10 @@ a:link {
     text-decoration: none;
 }
 
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
 
 /* Main cointainer to use all troughout the site*/
 .container {
@@ -134,12 +138,14 @@ nav {
 }
 
 /* css för kontaktsida och footer */
-
+.carousel-inner {
+    height: 450px;
+}
 
 .contactslides{
     border-radius: 4px;
     width: 30%;
-    height:  auto;
+    height: auto;
     margin: auto;
     overflow: hidden;
     max-height: 30em;
@@ -147,8 +153,6 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px black;
     font-size: 14px;
-    
-
 }
  .contact{
     
@@ -322,5 +326,19 @@ max-height: 50%;
 
     .hamburger {
         display: block;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .contact {   
+        margin: auto;
+        width: 100%;
+        align-items: center; 
+    }
+
+    .contactslides{
+    width: 100%;
     }
 }
