@@ -313,7 +313,8 @@ max-height: 50%;
 }
 
 #databankBild{
-    max-width: 100%;
+    max-width: 30%;
+    max-height: 50%;
     }
     
 #appGif{
