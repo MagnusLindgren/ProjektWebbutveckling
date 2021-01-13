@@ -58,10 +58,37 @@ a:visited {
 
 /* Main cointainer to use all troughout the site*/
 .container {
-    width: 80%;
+    width: 98%;
     margin: auto;
     overflow: hidden;
 }
+
+.responsiveimg {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 2px;
+  }
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex: 70%;
+}
+
+.flex-img {
+    align-content: center;
+    padding: 10px;
+    flex: 30%;
+}
+
 /* Så att flytande objekt inte krockar eller blir buggiga.*/
 .clr {
     clear:both;
@@ -341,7 +368,7 @@ max-height: 50%;
     }
 
     .container {
-        width: 95%;
+        width: 100%;
     }
 
     .contact {   
@@ -352,5 +379,9 @@ max-height: 50%;
 
     .contactslides{
     width: 100%;
+    }
+
+    .flex-box, .flex-img {
+        flex: 100%
     }
 }
